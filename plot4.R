@@ -43,6 +43,10 @@ with(powerDataExtract , {
            y= powerDataExtract$Sub_metering_3,  
            type = "l",
            col = "blue")
+    legend("topright", 
+           lty = 1, 
+           col = c("black", "red", "blue"), 
+           legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lwd=2, pt.cex = 1, cex= 0.75 )
     plot(x = powerDataExtract$DateTime, 
          y= powerDataExtract$Global_reactive_power,  
          type = "l", 
@@ -53,4 +57,3 @@ with(powerDataExtract , {
 )
 
 dev.off()
-
